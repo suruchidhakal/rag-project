@@ -12,14 +12,6 @@ This project implements a Retrieval-Augmented Generation (RAG) pipeline that ena
 
 Instead of relying only on the model's existing knowledge, the system retrieves relevant document content and provides it as context to generate more accurate and context-aware responses.
 
-
-
-\## RAG Pipeline Architecture
-
-
-
-
-
 \## RAG Pipeline Architecture
 
 
