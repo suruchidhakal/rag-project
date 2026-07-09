@@ -18,3 +18,4 @@ chroma_db/
 *.bin
 
 ~$*.docx
+~$*.doc
