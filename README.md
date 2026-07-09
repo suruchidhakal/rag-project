@@ -12,6 +12,8 @@ This project implements a Retrieval-Augmented Generation (RAG) pipeline that ena
 
 Instead of relying only on the model's existing knowledge, the system retrieves relevant document content and provides it as context to generate more accurate and context-aware responses.
 
+
+
 \## RAG Pipeline Architecture
 
 
@@ -22,7 +24,7 @@ Documents
 
 &#x20;   |
 
-&#x20;   ↓
+&#x20;   v
 
 Document Loading
 
@@ -30,7 +32,7 @@ Document Loading
 
 &#x20;   |
 
-&#x20;   ↓
+&#x20;   v
 
 Text Splitting
 
@@ -38,19 +40,19 @@ Text Splitting
 
 &#x20;   |
 
-&#x20;   ↓
+&#x20;   v
 
 Document Embeddings
 
 &#x20;   |
 
-&#x20;   ↓
+&#x20;   v
 
 Vector Database
 
 &#x20;   |
 
-&#x20;   ↓
+&#x20;   v
 
 Retriever
 
@@ -58,23 +60,25 @@ Retriever
 
 &#x20;   |
 
-&#x20;   ↓
+&#x20;   v
 
 Context Stuffing
 
 &#x20;   |
 
-&#x20;   ↓
+&#x20;   v
 
 LLM Generation
 
 &#x20;   |
 
-&#x20;   ↓
+&#x20;   v
 
 Final Response
 
 ```
+
+
 
 \## Features
 
