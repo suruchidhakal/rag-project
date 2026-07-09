@@ -22,57 +22,56 @@ Instead of relying only on the model's existing knowledge, the system retrieves 
 
 Documents
 
-&#x20;   |
+   |
 
-&#x20;   v
+   v
 
 Document Loading
 
 (PyPDFLoader + Docx2txtLoader)
 
-&#x20;   |
+  |
 
-&#x20;   v
+  v
 
 Text Splitting
 
 (CharacterTextSplitter)
 
-&#x20;   |
+   |
 
-&#x20;   v
+   v
 
 Document Embeddings
 
-&#x20;   |
+   |
 
-&#x20;   v
+   v
 
 Vector Database
 
-&#x20;   |
+   |
 
-&#x20;   v
+   v
 
 Retriever
 
 (Similarity Search + Maximum Marginal Relevance)
 
-&#x20;   |
+   |
 
-&#x20;   v
+   v
 
 Context Stuffing
 
-&#x20;   |
-
-&#x20;   v
+   |
+   v
 
 LLM Generation
 
-&#x20;   |
+   |
 
-&#x20;   v
+   v
 
 Final Response
 
