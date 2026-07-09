@@ -6,7 +6,7 @@
 
 
 
-This project implements a \*\*Retrieval-Augmented Generation (RAG)\*\* pipeline that enables a language model to answer questions using information retrieved from custom documents.
+This project implements a Retrieval-Augmented Generation (RAG) pipeline that enables a language model to answer questions using information retrieved from custom documents.
 
 
 
@@ -18,9 +18,17 @@ Instead of relying only on the model's existing knowledge, the system retrieves 
 
 
 
-```
+
+
+\## RAG Pipeline Architecture
+
+
+
+```text
 
 Documents
+
+&#x20;   |
 
 &#x20;   ↓
 
@@ -28,19 +36,27 @@ Document Loading
 
 (PyPDFLoader + Docx2txtLoader)
 
+&#x20;   |
+
 &#x20;   ↓
 
 Text Splitting
 
 (CharacterTextSplitter)
 
+&#x20;   |
+
 &#x20;   ↓
 
 Document Embeddings
 
+&#x20;   |
+
 &#x20;   ↓
 
 Vector Database
+
+&#x20;   |
 
 &#x20;   ↓
 
@@ -48,21 +64,25 @@ Retriever
 
 (Similarity Search + Maximum Marginal Relevance)
 
+&#x20;   |
+
 &#x20;   ↓
 
 Context Stuffing
 
+&#x20;   |
+
 &#x20;   ↓
 
 LLM Generation
+
+&#x20;   |
 
 &#x20;   ↓
 
 Final Response
 
 ```
-
-
 
 \## Features
 
